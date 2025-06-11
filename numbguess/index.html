@@ -1,0 +1,29 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <p>I am thinking of a number between <span class="range">1</span> and <span class="range">100</span>.</p>
+        <div class="input-group">
+            <label for="guess">Take a guess:</label>
+            <input type="number" id="guess" min="1" max="100">
+            <button id="submitGuess">Guess</button>
+        </div>
+        <div class="results">
+            <p class="message" id="message"></p>
+            <p class="previous-guesses">Previous guesses: <span id="guesses"></span></p>
+            <p class="remaining-guesses">Remaining guesses: <span id="remaining">10</span></p>
+        </div>
+        <button id="newGame" class="new-game">Start new game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
